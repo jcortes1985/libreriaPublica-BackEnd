@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\libreria_srv.props" />
+</Project>

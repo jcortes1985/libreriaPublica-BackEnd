@@ -11,8 +11,10 @@ namespace libreria_publica_Data.Models.security
     public class RolesUser
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        public ICollection<User> Users { get; set; }
-        public ICollection<Rol> rols { get; set; }
+        public int IdRolUser { get; set; }
+        public int IdUser { get; set; }
+        public int IdRol { get; set; }
+
+       
     }
 }

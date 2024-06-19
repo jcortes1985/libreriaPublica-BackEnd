@@ -1,4 +1,5 @@
 ﻿using libreria_publica_DataLayer.Models.catalogs;
+using libreria_publica_DataLayer.Models.operations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,13 +14,13 @@ namespace libreria_publica_Data.Models.security
     public class User
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int IdUser { get; set; }
+
         [Required, StringLength(100)]
         public string email {  get; set; }
         [Required, StringLength(50)]
         public string password { get; set; }
-        public ICollection<Rol> rol { get; set; }
-        public ICollection<Personas> personas { get; set; }
-        
+        public int IdRol { get; set; }
+
     }
 }

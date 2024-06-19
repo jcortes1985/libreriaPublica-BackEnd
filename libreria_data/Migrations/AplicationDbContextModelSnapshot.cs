@@ -24,62 +24,55 @@ namespace libreria_data.Migrations
 
             modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Clasificaciones", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idClasificacion")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<int?>("LibrosId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idClasificacion"));
 
                     b.Property<string>("name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("id");
-
-                    b.HasIndex("LibrosId");
+                    b.HasKey("idClasificacion");
 
                     b.ToTable("Clasificaciones");
                 });
 
             modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Generos", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idGenero")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<int?>("LibrosId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idGenero"));
 
                     b.Property<string>("name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("id");
+                    b.HasKey("idGenero");
 
-                    b.HasIndex("LibrosId");
-
-                    b.ToTable("Impuesto");
+                    b.ToTable("Generos");
                 });
 
-            modelBuilder.Entity("libreria_publica_Data.Models.library.Libros", b =>
+            modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Libros", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("idLibro")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("TransaccionesLibroid")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idLibro"));
 
                     b.Property<int>("hojas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idClasificacion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idGenero")
                         .HasColumnType("int");
 
                     b.Property<int>("numLibros")
@@ -98,66 +91,57 @@ namespace libreria_data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("TransaccionesLibroid");
+                    b.HasKey("idLibro");
 
                     b.ToTable("Libros");
                 });
 
             modelBuilder.Entity("libreria_publica_Data.Models.security.Rol", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdRol")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRol"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("RolesUserId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RolesUserId");
-
-                    b.HasIndex("UserId");
+                    b.HasKey("IdRol");
 
                     b.ToTable("Rol");
                 });
 
             modelBuilder.Entity("libreria_publica_Data.Models.security.RolesUser", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdRolUser")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRolUser"));
 
-                    b.HasKey("Id");
+                    b.Property<int>("IdRol")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdUser")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdRolUser");
 
                     b.ToTable("RolesUser");
                 });
 
             modelBuilder.Entity("libreria_publica_Data.Models.security.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdUser")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdUser"));
 
-                    b.Property<int?>("RolesUserId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TransaccionesLibroid")
+                    b.Property<int>("IdRol")
                         .HasColumnType("int");
 
                     b.Property<string>("email")
@@ -170,22 +154,18 @@ namespace libreria_data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("RolesUserId");
-
-                    b.HasIndex("TransaccionesLibroid");
+                    b.HasKey("IdUser");
 
                     b.ToTable("User");
                 });
 
             modelBuilder.Entity("libreria_publica_DataLayer.Models.catalogs.Personas", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idPersona")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idPersona"));
 
                     b.Property<string>("AMaterno")
                         .IsRequired()
@@ -217,28 +197,21 @@ namespace libreria_data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("TransaccionesLibroid")
+                    b.Property<int>("idUser")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("TransaccionesLibroid");
-
-                    b.HasIndex("UserId");
+                    b.HasKey("idPersona");
 
                     b.ToTable("Personas");
                 });
 
             modelBuilder.Entity("libreria_publica_DataLayer.Models.operations.TransaccionesLibro", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idTransaccion")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idTransaccion"));
 
                     b.Property<DateTime>("FechaRegreso")
                         .HasColumnType("datetime2");
@@ -246,93 +219,18 @@ namespace libreria_data.Migrations
                     b.Property<DateTime>("FechaTransaccion")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("id");
+                    b.Property<int>("idLibro")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idPersona")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idUser")
+                        .HasColumnType("int");
+
+                    b.HasKey("idTransaccion");
 
                     b.ToTable("TransaccionesLibro");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Clasificaciones", b =>
-                {
-                    b.HasOne("libreria_publica_Data.Models.library.Libros", null)
-                        .WithMany("clasificacion")
-                        .HasForeignKey("LibrosId");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Generos", b =>
-                {
-                    b.HasOne("libreria_publica_Data.Models.library.Libros", null)
-                        .WithMany("Genero")
-                        .HasForeignKey("LibrosId");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.library.Libros", b =>
-                {
-                    b.HasOne("libreria_publica_DataLayer.Models.operations.TransaccionesLibro", null)
-                        .WithMany("Libro")
-                        .HasForeignKey("TransaccionesLibroid");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.security.Rol", b =>
-                {
-                    b.HasOne("libreria_publica_Data.Models.security.RolesUser", null)
-                        .WithMany("rols")
-                        .HasForeignKey("RolesUserId");
-
-                    b.HasOne("libreria_publica_Data.Models.security.User", null)
-                        .WithMany("rol")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.security.User", b =>
-                {
-                    b.HasOne("libreria_publica_Data.Models.security.RolesUser", null)
-                        .WithMany("Users")
-                        .HasForeignKey("RolesUserId");
-
-                    b.HasOne("libreria_publica_DataLayer.Models.operations.TransaccionesLibro", null)
-                        .WithMany("User")
-                        .HasForeignKey("TransaccionesLibroid");
-                });
-
-            modelBuilder.Entity("libreria_publica_DataLayer.Models.catalogs.Personas", b =>
-                {
-                    b.HasOne("libreria_publica_DataLayer.Models.operations.TransaccionesLibro", null)
-                        .WithMany("Persona")
-                        .HasForeignKey("TransaccionesLibroid");
-
-                    b.HasOne("libreria_publica_Data.Models.security.User", null)
-                        .WithMany("personas")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.library.Libros", b =>
-                {
-                    b.Navigation("Genero");
-
-                    b.Navigation("clasificacion");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.security.RolesUser", b =>
-                {
-                    b.Navigation("Users");
-
-                    b.Navigation("rols");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.security.User", b =>
-                {
-                    b.Navigation("personas");
-
-                    b.Navigation("rol");
-                });
-
-            modelBuilder.Entity("libreria_publica_DataLayer.Models.operations.TransaccionesLibro", b =>
-                {
-                    b.Navigation("Libro");
-
-                    b.Navigation("Persona");
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

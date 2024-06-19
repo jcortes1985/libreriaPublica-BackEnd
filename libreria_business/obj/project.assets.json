@@ -1094,31 +1094,14 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6"
-        },
-        "compile": {
-          "bin/placeholder/libreria_data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/libreria_data.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "libreria_services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "compile": {
-          "bin/placeholder/libreria_services.dll": {}
+          "bin/placeholder/libreria_data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/libreria_services.dll": {}
+          "bin/placeholder/libreria_data.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -3226,17 +3209,11 @@
       "type": "project",
       "path": "../libreria_data/libreria_data.csproj",
       "msbuildProject": "../libreria_data/libreria_data.csproj"
-    },
-    "libreria_services/1.0.0": {
-      "type": "project",
-      "path": "../libreria_services/libreria_services.csproj",
-      "msbuildProject": "../libreria_services/libreria_services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "libreria_data >= 1.0.0",
-      "libreria_services >= 1.0.0"
+      "libreria_data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3276,9 +3253,6 @@
           "projectReferences": {
             "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_data\\libreria_data.csproj": {
               "projectPath": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_data\\libreria_data.csproj"
-            },
-            "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_services\\libreria_services.csproj": {
-              "projectPath": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_services\\libreria_services.csproj"
             }
           }
         }

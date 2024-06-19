@@ -1,4 +1,5 @@
 ﻿using libreria_publica_Data.Models.catalogs;
+using libreria_publica_DataLayer.Models.operations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,14 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace libreria_publica_Data.Models.library
+namespace libreria_publica_Data.Models.catalogs
 {
     public class Libros
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-        public ICollection<Generos> Genero { get; set; }
-        public ICollection<Clasificaciones> clasificacion { get; set; }
+        public int idLibro { get; set; }
+        public int idGenero { get; set; }
+        public int idClasificacion { get; set; }
         [Required, MaxLength(100)]
         public string titulo { get; set; }
         [Required, MaxLength(250)]

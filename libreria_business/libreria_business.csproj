@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\libreria_data\libreria_data.csproj" />
-    <ProjectReference Include="..\libreria_services\libreria_services.csproj" />
   </ItemGroup>
 
 </Project>

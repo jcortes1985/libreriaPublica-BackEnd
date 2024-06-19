@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pQ0Hkrsfkd9hRxNx7PibJzZfP3QrubbkZ8dIU3POJ6s=",
+  "Hash": "M1gGybtHfHMm8Y3kw1xjzrEw4jqQbrYdG2GQ3owrl5k=",
   "Source": "libreria_business",
   "BasePath": "_content/libreria_business",
   "Mode": "Default",
@@ -10,17 +10,6 @@
       "Identity": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_data\\libreria_data.csproj",
       "Version": 2,
       "Source": "libreria_data",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    },
-    {
-      "Identity": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_services\\libreria_services.csproj",
-      "Version": 2,
-      "Source": "libreria_services",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",

@@ -1,9 +1,20 @@
+using libreria_data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
+
+//agregar contexto
+builder.Services.AddDbContext<AplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("conexionSqlServer"));
+});
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\businessoperations\\olibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_srv\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\errorscontrol\\libreriaexcepcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\classabstract\\alibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_srv\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\businessoperations\\ousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\transactions\\transusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\validate\\validateusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7A74FBD-2CB5-4AAD-912F-C53D48F69CD5}|..\\libreria_business\\libreria_business.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_business\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_srv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|c:\\users\\jcr01\\desktop\\libreriapublicareact\\libreria-publica-react-be\\libreria_srv\\libreria_srv.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DD128519-31D0-47D5-B7CC-38507489818A}|libreria_srv.csproj|solutionrelative:libreria_srv.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibreriaExcepcion.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\errorsControl\\LibreriaExcepcion.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\errorsControl\\LibreriaExcepcion.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\errorsControl\\LibreriaExcepcion.cs",
+              "RelativeToolTip": "..\\libreria_business\\errorsControl\\LibreriaExcepcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T20:06:55.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "aLibros.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\classAbstract\\aLibros.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\classAbstract\\aLibros.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\classAbstract\\aLibros.cs",
+              "RelativeToolTip": "..\\libreria_business\\classAbstract\\aLibros.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T18:01:51.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Controllers\\LibrosController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAnwDEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T17:20:55.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "oLibros.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\businessOperations\\oLibros.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\businessOperations\\oLibros.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\businessOperations\\oLibros.cs",
+              "RelativeToolTip": "..\\libreria_business\\businessOperations\\oLibros.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T17:11:04.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "oUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\businessOperations\\oUsuarios.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\businessOperations\\oUsuarios.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\businessOperations\\oUsuarios.cs",
+              "RelativeToolTip": "..\\libreria_business\\businessOperations\\oUsuarios.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T16:20:10.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "transUsers.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\transactions\\transUsers.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\transactions\\transUsers.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\transactions\\transUsers.cs",
+              "RelativeToolTip": "..\\libreria_business\\transactions\\transUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:35:46.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "validateUsers.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\validate\\validateUsers.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\validate\\validateUsers.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\validate\\validateUsers.cs",
+              "RelativeToolTip": "..\\libreria_business\\validate\\validateUsers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:35:04.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\Class.cs",
+              "RelativeDocumentMoniker": "..\\libreria_business\\Class.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_business\\Class.cs",
+              "RelativeToolTip": "..\\libreria_business\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:23:55.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwCQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:22:32.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-19T03:46:14.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "libreria_srv",
+              "DocumentMoniker": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\libreria_srv.csproj",
+              "RelativeDocumentMoniker": "libreria_srv.csproj",
+              "ToolTip": "C:\\Users\\JCR01\\Desktop\\libreriaPublicaReact\\libreria-publica-react-be\\libreria_srv\\libreria_srv.csproj",
+              "RelativeToolTip": "libreria_srv.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-19T03:26:40.218Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

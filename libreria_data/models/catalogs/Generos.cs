@@ -1,4 +1,5 @@
-﻿using System;
+﻿using libreria_publica_DataLayer.Models.operations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,8 +12,10 @@ namespace libreria_publica_Data.Models.catalogs
     public class Generos
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
+        public int idGenero { get; set; }
         [Required, MaxLength(100)]
         public string name { get; set; }
+
+
     }
 }
