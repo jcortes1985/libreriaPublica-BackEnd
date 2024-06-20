@@ -3,7 +3,6 @@ C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_s
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.AssemblyInfoInputs.cache
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.AssemblyInfo.cs
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.csproj.CoreCompileInputs.cache
-C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.sourcelink.json
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\bin\Debug\net8.0\libreria_business.deps.json
@@ -263,3 +262,5 @@ C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_s
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.pdb
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.genruntimeconfig.cache
 C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\ref\libreria_srv.dll
+C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\obj\Debug\net8.0\libreria_srv.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\JCR01\Desktop\libreriaPublicaReact\libreria-publica-react-be\libreria_srv\bin\Debug\net8.0\FluentAssertions.dll

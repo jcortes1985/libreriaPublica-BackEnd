@@ -29,16 +29,19 @@ namespace libreria_business.businessObjects
                 throw new Exception(ex.Message + "Ocurrio un error al consultar los datos.");
             }
         }
-        public User GetUser(int id)
+        public List<User> GetUser(string email, string contrasena)
         {
             try
             {
-                var data = _context.User.Find(id);
+                var data = (from p in _context.User
+                            where p.email == email && p.password == contrasena 
+                            select p).ToList();
+
                 if (data != null)
                 {
                     return data;
                 }
-                return new User();
+                return new List<User>();
 
             }
             catch (Exception ex)

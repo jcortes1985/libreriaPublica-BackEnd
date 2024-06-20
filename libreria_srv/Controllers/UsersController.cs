@@ -38,15 +38,15 @@ namespace libreria_srv.Controllers
         }
 
         // GET: api/Users/5
-        [HttpGet("{id}")]
-        public User GetUser(int id)
+        [HttpGet("{email},{password}")]
+        public List<User> GetUser(string email, string password)
         {
             oUsuarios users = new oUsuarios(_context);
-            var user =  users.GetUser(id);
+            var user =  users.GetUser(email, password);
 
             if (user == null)
             {
-                return new User();
+                return new List<User>();
             }
 
             return user;
