@@ -1,5 +1,85 @@
 [
   {
+    "ContainingType": "libreria_srv.Controllers.CatalogosController",
+    "Method": "GetCatClasificaciones",
+    "RelativePath": "api/Catalogos/GetCatClasificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_Data.Models.catalogs.Clasificaciones, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "libreria_srv.Controllers.CatalogosController",
+    "Method": "GetCatGeneros",
+    "RelativePath": "api/Catalogos/GetCatGeneros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_Data.Models.catalogs.Generos, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "libreria_srv.Controllers.CatalogosController",
+    "Method": "GetCatLibros",
+    "RelativePath": "api/Catalogos/GetCatLibros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_Data.Models.catalogs.Libros, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "libreria_srv.Controllers.CatalogosController",
+    "Method": "GetCatPersonas",
+    "RelativePath": "api/Catalogos/GetCatPersonas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_DataLayer.Models.catalogs.Personas, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "libreria_srv.Controllers.LibrosController",
     "Method": "GetLibros",
     "RelativePath": "api/Libros",
@@ -124,16 +204,48 @@
     ]
   },
   {
-    "ContainingType": "libreria_srv.Controllers.UsersController",
-    "Method": "GetUser",
-    "RelativePath": "api/Users",
+    "ContainingType": "libreria_srv.Controllers.TransaccionesController",
+    "Method": "PostLibros",
+    "RelativePath": "api/Transacciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "libreria_publica_DataLayer.Models.operations.TransaccionesLibro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_DataLayer.Models.operations.TransaccionesLibro, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "libreria_srv.Controllers.TransaccionesController",
+    "Method": "GetTransacciones",
+    "RelativePath": "api/Transacciones/{idPersona}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "idPersona",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "libreria_publica_Data.Models.security.User",
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_DataLayer.Models.operations.TransaccionesLibro, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -146,20 +258,40 @@
   {
     "ContainingType": "libreria_srv.Controllers.UsersController",
     "Method": "GetUser",
-    "RelativePath": "api/Users/{email},{password}",
+    "RelativePath": "api/Users",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[libreria_publica_Data.Models.security.User, libreria_data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "libreria_srv.Controllers.UsersController",
+    "Method": "GetUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "email",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "password",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

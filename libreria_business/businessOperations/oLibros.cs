@@ -1,4 +1,5 @@
-﻿using libreria_business.classAbstract;
+﻿using Azure;
+using libreria_business.classAbstract;
 using libreria_business.errorsControl;
 using libreria_business.transactions;
 using libreria_data;
@@ -22,7 +23,10 @@ namespace libreria_business.businessOperations
             try
             {
                 var data = (from p in _context.Libros
+                            join c in _context.Clasificaciones on p.idClasificacion equals c.idClasificacion
+                            join g in _context.Generos on p.idGenero equals g.idGenero
                             select p).ToList();
+                            
 
                 if (data != null)
                 {

@@ -1,11 +1,5 @@
-﻿using libreria_publica_DataLayer.Models.operations;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace libreria_publica_DataLayer.Models.catalogs
 {
@@ -13,8 +7,6 @@ namespace libreria_publica_DataLayer.Models.catalogs
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idPersona { get; set; }
-        public int idUser { get; set; }
-
         [Required, MaxLength(50)]
         public string APaterno { get; set; }
         [Required, MaxLength(50)]
@@ -27,6 +19,8 @@ namespace libreria_publica_DataLayer.Models.catalogs
         public string Telefono { get; set; }
         [Required, MaxLength(100)]
         public string Email { get; set; }
+        public int activo { get; set; }
+
 
     }
 }

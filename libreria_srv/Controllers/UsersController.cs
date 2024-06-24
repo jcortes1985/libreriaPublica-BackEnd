@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using libreria_data;
 using libreria_publica_Data.Models.security;
 using libreria_business.businessObjects;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
 
 namespace libreria_srv.Controllers
 {
@@ -24,27 +26,30 @@ namespace libreria_srv.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public User GetUser()
+        //[Authorize]
+        public List<User> GetUser()
         {
             oUsuarios users = new oUsuarios(_context);
             var user = users.GetUser();
 
             if (user == null)
             {
-                return new User();
+                return new List<User>();
             }
 
-            return user;
+            return user; 
         }
 
-        // GET: api/Users/5
-        [HttpGet("{email},{password}")]
+        // POST: api/Users/5
+        [HttpPost]
+        //[Authorize]
+        //[Route("GetUser/{email},{password}")]
         public List<User> GetUser(string email, string password)
         {
             oUsuarios users = new oUsuarios(_context);
             var user =  users.GetUser(email, password);
 
-            if (user == null)
+            if (user.Count() == 0)
             {
                 return new List<User>();
             }

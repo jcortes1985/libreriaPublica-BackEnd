@@ -22,6 +22,25 @@ namespace libreria_data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("libreria_data.models.security.RolMenu", b =>
+                {
+                    b.Property<int>("IdRolMenu")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRolMenu"));
+
+                    b.Property<int>("IdMenu")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdRol")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdRolMenu");
+
+                    b.ToTable("RolMenus");
+                });
+
             modelBuilder.Entity("libreria_publica_Data.Models.catalogs.Clasificaciones", b =>
                 {
                     b.Property<int>("idClasificacion")
@@ -66,13 +85,16 @@ namespace libreria_data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idLibro"));
 
-                    b.Property<int>("hojas")
+                    b.Property<int?>("hojas")
                         .HasColumnType("int");
 
                     b.Property<int>("idClasificacion")
                         .HasColumnType("int");
 
                     b.Property<int>("idGenero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("librosDisponibles")
                         .HasColumnType("int");
 
                     b.Property<int>("numLibros")
@@ -96,6 +118,23 @@ namespace libreria_data.Migrations
                     b.ToTable("Libros");
                 });
 
+            modelBuilder.Entity("libreria_publica_Data.Models.security.Menu", b =>
+                {
+                    b.Property<int>("IdMenu")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdMenu"));
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdMenu");
+
+                    b.ToTable("Menus");
+                });
+
             modelBuilder.Entity("libreria_publica_Data.Models.security.Rol", b =>
                 {
                     b.Property<int>("IdRol")
@@ -112,25 +151,6 @@ namespace libreria_data.Migrations
                     b.HasKey("IdRol");
 
                     b.ToTable("Rol");
-                });
-
-            modelBuilder.Entity("libreria_publica_Data.Models.security.RolesUser", b =>
-                {
-                    b.Property<int>("IdRolUser")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRolUser"));
-
-                    b.Property<int>("IdRol")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdRolUser");
-
-                    b.ToTable("RolesUser");
                 });
 
             modelBuilder.Entity("libreria_publica_Data.Models.security.User", b =>
@@ -197,7 +217,7 @@ namespace libreria_data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("idUser")
+                    b.Property<int>("activo")
                         .HasColumnType("int");
 
                     b.HasKey("idPersona");
@@ -213,19 +233,16 @@ namespace libreria_data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idTransaccion"));
 
-                    b.Property<DateTime>("FechaRegreso")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime?>("FechaRegreso")
+                        .HasColumnType("datetime");
 
-                    b.Property<DateTime>("FechaTransaccion")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime?>("FechaTransaccion")
+                        .HasColumnType("datetime");
 
                     b.Property<int>("idLibro")
                         .HasColumnType("int");
 
                     b.Property<int>("idPersona")
-                        .HasColumnType("int");
-
-                    b.Property<int>("idUser")
                         .HasColumnType("int");
 
                     b.HasKey("idTransaccion");

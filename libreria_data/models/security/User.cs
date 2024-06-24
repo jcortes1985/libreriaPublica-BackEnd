@@ -1,13 +1,5 @@
-﻿using libreria_publica_DataLayer.Models.catalogs;
-using libreria_publica_DataLayer.Models.operations;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace libreria_publica_Data.Models.security
 {
@@ -20,6 +12,7 @@ namespace libreria_publica_Data.Models.security
         public string email {  get; set; }
         [Required, StringLength(50)]
         public string password { get; set; }
+        [Required]
         public int IdRol { get; set; }
 
     }

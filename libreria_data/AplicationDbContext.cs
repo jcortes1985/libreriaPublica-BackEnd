@@ -1,4 +1,5 @@
-﻿using libreria_publica_Data.Models.catalogs;
+﻿using libreria_data.models.security;
+using libreria_publica_Data.Models.catalogs;
 using libreria_publica_Data.Models.security;
 using libreria_publica_DataLayer.Models.catalogs;
 using libreria_publica_DataLayer.Models.operations;
@@ -31,9 +32,10 @@ namespace libreria_data
         public DbSet<Libros> Libros { get; set; }
         public DbSet<Personas> Personas { get; set; }
         public DbSet<TransaccionesLibro> TransaccionesLibro { get; set; }
+        public DbSet<Menu> Menus { get; set; }
         public DbSet<Rol> Rol { get; set; }
-        public DbSet<RolesUser> RolesUser { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<RolMenu> RolMenus { get; set; }
 
      }
 }

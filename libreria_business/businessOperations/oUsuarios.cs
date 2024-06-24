@@ -12,16 +12,18 @@ namespace libreria_business.businessObjects
         {
             _context = context;
         }
-        public User GetUser()
+        public List<User> GetUser()
         {
             try
             {
-                var data = _context.User.Find();
+                var data = (from p in _context.User
+                            select p).ToList();
+
                 if (data != null)
                 {
                     return data;
                 }
-                return new User();
+                return new List<User>();
 
             }
             catch (Exception ex)

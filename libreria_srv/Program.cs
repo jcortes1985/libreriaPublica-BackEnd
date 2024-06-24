@@ -20,10 +20,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                      });
+});
 
+builder.Services.AddControllers();
 
-builder.Services.AddMvc();
+builder.Services.AddAuthentication()
+    .AddCookie();
+
+builder.Services.AddHttpClient();//  Mvc();
 builder.Services.AddMvcCore();
 
 
@@ -34,6 +47,9 @@ builder.Services.AddDbContext<AplicationDbContext>(options =>
 });
 
 var app = builder.Build();
+app.UseStaticFiles();
+app.UseRouting();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -42,16 +58,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.UseCors(builder => builder
-     .AllowAnyOrigin()
-     .AllowAnyMethod()
-     .AllowAnyHeader());
-
 
 app.Run();

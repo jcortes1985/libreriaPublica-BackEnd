@@ -78,7 +78,7 @@ namespace libreria_srv.Controllers
         // POST: api/Libros
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public List<Libros> PostLibros(Libros libro)
+        public List<Libros> PostLibros([FromBody]Libros libro)
         {
             oLibros libros = new oLibros(_context);
             var data = libros.post(libro);

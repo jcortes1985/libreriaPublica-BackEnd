@@ -43,17 +43,31 @@ namespace libreria_data.Migrations
                 {
                     idLibro = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idGenero = table.Column<int>(type: "int", nullable: false),
                     idClasificacion = table.Column<int>(type: "int", nullable: false),
+                    idGenero = table.Column<int>(type: "int", nullable: false),
                     titulo = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     trama = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    hojas = table.Column<int>(type: "int", nullable: false),
+                    hojas = table.Column<int>(type: "int", nullable: true),
                     numLibros = table.Column<int>(type: "int", nullable: false),
-                    soloUsers = table.Column<int>(type: "int", nullable: false)
+                    soloUsers = table.Column<int>(type: "int", nullable: false),
+                    librosDisponibles = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Libros", x => x.idLibro);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Menus",
+                columns: table => new
+                {
+                    IdMenu = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Menus", x => x.IdMenu);
                 });
 
             migrationBuilder.CreateTable(
@@ -62,13 +76,13 @@ namespace libreria_data.Migrations
                 {
                     idPersona = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idUser = table.Column<int>(type: "int", nullable: false),
                     APaterno = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     AMaterno = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Direccion = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    activo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -89,17 +103,17 @@ namespace libreria_data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "RolesUser",
+                name: "RolMenus",
                 columns: table => new
                 {
-                    IdRolUser = table.Column<int>(type: "int", nullable: false)
+                    IdRolMenu = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IdUser = table.Column<int>(type: "int", nullable: false),
-                    IdRol = table.Column<int>(type: "int", nullable: false)
+                    IdRol = table.Column<int>(type: "int", nullable: false),
+                    IdMenu = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RolesUser", x => x.IdRolUser);
+                    table.PrimaryKey("PK_RolMenus", x => x.IdRolMenu);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,11 +122,10 @@ namespace libreria_data.Migrations
                 {
                     idTransaccion = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idUser = table.Column<int>(type: "int", nullable: false),
                     idPersona = table.Column<int>(type: "int", nullable: false),
                     idLibro = table.Column<int>(type: "int", nullable: false),
-                    FechaTransaccion = table.Column<DateTime>(type: "datetime", nullable: false),
-                    FechaRegreso = table.Column<DateTime>(type: "datetime", nullable: false)
+                    FechaTransaccion = table.Column<DateTime>(type: "datetime", nullable: true),
+                    FechaRegreso = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -148,13 +161,16 @@ namespace libreria_data.Migrations
                 name: "Libros");
 
             migrationBuilder.DropTable(
+                name: "Menus");
+
+            migrationBuilder.DropTable(
                 name: "Personas");
 
             migrationBuilder.DropTable(
                 name: "Rol");
 
             migrationBuilder.DropTable(
-                name: "RolesUser");
+                name: "RolMenus");
 
             migrationBuilder.DropTable(
                 name: "TransaccionesLibro");
